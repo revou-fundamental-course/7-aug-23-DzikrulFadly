@@ -1,0 +1,531 @@
+/*# Google Font #*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+
+/*# Reset CSS #*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/*# Navbar Style #*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem 9%;
+  background: #3874ff;
+}
+
+.navbar-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-title .first {
+  color: orange;
+}
+
+.navbar-title .last {
+  color: yellowgreen;
+  padding-left: 8px;
+}
+
+.navbar-title h2 span {
+  color: #fff;
+}
+
+
+/*# Header Style #*/
+#header {
+  display: block;
+  padding: 2rem;
+}
+
+.header-title h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.header-title p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+/*# Luas & Keliling Segitiga Style #*/
+.calculator {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.luas,
+.keliling {
+  margin: 1rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.luas h2 {
+  padding: 2rem;
+  background-color: orange;
+  border-radius: 10px 10px 0 0;
+}
+
+.keliling h2 {
+  padding: 2rem;
+  background-color: yellowgreen;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Rumus */
+.rumus {
+  text-align: left;
+  margin: 2rem;
+}
+
+.rumus h4 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.keterangan {
+  list-style: none;
+}
+
+/* Form Input */
+.form-input {
+  margin-bottom: 3rem;
+}
+
+.form-input input {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+.form-input [type="text"] {
+  margin: 0.7rem;
+}
+
+.form-input h3 {
+  margin-bottom: 1rem;
+}
+
+/* Hasil */
+.result {
+  text-align: left;
+  padding: 1rem 2rem;
+}
+
+/* Button Submit & Reset */
+button {
+  background-color: orange;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#resetLuas, #resetKeliling {
+  background-color: yellowgreen;
+}
+
+/* Error Form */
+.error-form {
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 13px;
+  color: red;
+  font-weight: 500;
+}
+
+
+/*# Footer Style #*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem 9%;
+  background: #3874ff;
+}
+
+.footet-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.footet-title .first {
+  color: orange;
+}
+
+.footet-title .last {
+  color: yellowgreen;
+  padding-left: 8px;
+}
+
+.footet-title h2 span {
+  color: #fff;
+}
+
+.footer-text p {
+  font-size: 1rem;
+}
+
+
+/*# Responsive #*/
+@media (max-width: 868px) {
+
+  /*# Header #*/
+  #header {
+    display: block;
+    padding: 1rem;
+  }
+
+  .header-title h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-title p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /*# Luas & Keliling Segitiga #*/
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    margin: 1rem 5rem;
+  }
+
+  .luas,
+  .keliling {
+    margin: 3rem auto;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .luas h2,
+  .keliling h2 {
+    padding: 2rem;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.7rem;
+  }
+
+  /* Rumus */
+  .rumus {
+    text-align: left;
+    margin: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .rumus h4 {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .keterangan {
+    list-style: none;
+  }
+
+  /* Form Input */
+  .form-input {
+    margin-bottom: 3rem;
+  }
+
+  .form-input input {
+    width: 92%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none;
+  }
+
+  .form-input [type="text"] {
+    margin: 0.7rem;
+  }
+
+  .form-input h3 {
+    margin-bottom: 1rem;
+  }
+
+  /* Hasil */
+  .result {
+    text-align: left;
+    padding: 1rem 2rem;
+  }
+
+  /* Footer */
+  .footer-text p {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 620px) {
+
+  /*# Luas & Keliling Segitiga #*/
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    margin: 1rem 3rem;
+  }
+  
+  /* Rumus */
+  .rumus p {
+    font-size: 18px;
+  }
+  
+  .rumus h4 {
+    font-size: 20px;
+  }
+  
+  .keterangan li {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 9%;
+    background: #3874ff;
+  }
+
+  .footet-title {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 520px) {
+  /*# Navbar #*/
+  .navbar-title {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+  }
+
+  /*# Header #*/
+  #header {
+    display: block;
+    padding: 1rem;
+  }
+
+  .header-title h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-title p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0 1rem;
+  }
+
+  /*# Luas & Keliling Segitiga Style #*/
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    margin: 1rem 2rem;
+  }
+
+  .luas,
+  .keliling {
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+  }
+
+  .luas h2,
+  .keliling h2 {
+    padding: 1.5rem;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.2rem;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 9%;
+    background: #3874ff;
+  }
+
+  .footet-title {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .footet-title .first {
+    color: orange;
+  }
+
+  .footet-title .last {
+    color: yellowgreen;
+    padding-left: 8px;
+  }
+
+  .footet-title h2 span {
+    color: #fff;
+  }
+
+  .footer-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 462px) {
+
+  /*# Luas & Keliling Segitiga Style #*/
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .img {
+    width: 90%;
+    align-items: center;
+  }
+
+  .luas,
+  .keliling {
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+  }
+
+  /* Rumus */
+  .rumus {
+    text-align: left;
+    margin: 1rem;
+  }
+
+  .keterangan {
+    list-style: none;
+  }
+
+  /* Form Input */
+  .form-input {
+    margin-bottom: 2rem;
+  }
+
+  .form-input input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none;
+  }
+
+  .form-input [type="text"] {
+    margin: 0.5rem;
+  }
+
+  .form-input h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .result {
+    text-align: left;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Error Form */
+  .error-form {
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 11px;
+    color: red;
+    font-weight: 500;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 9%;
+    background: #3874ff;
+  }
+
+  .footer-text p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+
+  /* Image */
+  .img {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* Rumus */
+  .rumus p {
+    font-size: 16px;
+  }
+
+  .rumus h4 {
+    font-size: 18px;
+  }
+
+  .keterangan li {
+    font-size: 14px;
+  }
+}

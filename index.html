@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga | Dzikrul Fadly</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="navbar-title">
+            <h2 class="first">Dzikrul</h2>
+            <h2 class="last">Fadly <span>.</span></h2>
+        </div>
+    </nav>
+    <!-- Navbar End-->
+    
+    <!-- Header Start -->
+    <header id="header">
+        <div class="header-title">
+            <h1>Hei, Welcome Guys!</h1>
+            <p>Ini adalah kalkulator sederhana untuk menghitung luas dan keliling segitiga</p>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Luas & Keliling Segitiga Start -->
+    <div class="calculator">
+
+        <!-- Form luas segitiga -->
+        <div class="luas" id="luasForm">
+            <h2>Luas Segitiga</h2>
+
+            <!-- img & keterangan rumus luas-->
+            <div class="img-luas">
+                <img src="./assets/segitiga.jpg" width="400" height="300" alt="luas segitiga" class="img">
+                <div class="rumus">
+                    <p>Rumus Luas Segitiga yaitu :</p>
+                    <h4>L = 1/2 x a x t</h4>
+                    <ul class="keterangan">
+                        <li>Di mana :</li>
+                        <li>L = Luas</li>
+                        <li>a = Panjang Alas</li>
+                        <li>t = Tinggi</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- input form luas -->
+            <div class="form-input">
+                <h3>Hitung Luas Segitiga</h3>
+                <input type="text" id="alas" placeholder="Masukkan alas segitiga" maxlength="7" onkeypress="validateInput(event)" autocomplete="off">
+                <div class="error-form" id="alasError"></div>
+
+                <input type="text" id="tinggi" placeholder="Masukkan tinggi segitiga" maxlength="7" onkeypress="validateInput(event)" autocomplete="off">
+                <div class="error-form" id="tinggiError"></div>
+
+                <div class="result" id="resultLuas"></div>
+                
+                <!-- Button Submit & Reset Luas -->
+                <button id="hitungLuas">Hitung Luas</button>
+                <button id="resetLuas">Reset</button>
+            </div>
+        </div>
+
+        <!-- Form keliling segitiga -->
+        <div class="keliling" id="kelilingForm">
+            <h2>Keliling Segitiga</h2>
+
+            <!-- img & keterangan rumus keliling -->
+            <div class="img-keliling">
+                <img src="./assets/segitiga.jpg" width="400" height="300" alt="keliling segitiga" class="img">
+                <div class="rumus">
+                    <p>Rumus Keliling Segitiga yaitu :</p>
+                    <h4>K = S1 + S2 + S3</h4>
+                    <ul class="keterangan">
+                        <li>Di mana :</li>
+                        <li>K = Keliling</li>
+                        <li>S1 = Sisi A</li>
+                        <li>S2 = Sisi B</li>
+                        <li>S3 = Sisi C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- input form keliling -->
+            <div class="form-input">
+                <h3>Hitung Keliling Segitiga</h3>
+                <input type="text" id="sisiA" placeholder="Masukkan sisi A" maxlength="7" onkeypress="validateInput(event)" autocomplete="off">
+                <div class="error-form" id="sisiAError"></div>
+
+                <input type="text" id="sisiB" placeholder="Masukkan sisi B" maxlength="7" onkeypress="validateInput(event)" autocomplete="off">
+                <div class="error-form" id="sisiBError"></div>
+
+                <input type="text" id="sisiC" placeholder="Masukkan sisi C" maxlength="7" onkeypress="validateInput(event)" autocomplete="off">
+                <div class="error-form" id="sisiCError"></div>
+
+                <div class="result" id="resultKeliling"></div>
+                
+                <!-- Button Submit & Reset Keliling -->
+                <button id="hitungKeliling">Hitung Keliling</button>
+                <button id="resetKeliling">Reset</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Luas & Keliling Segitiga End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footet-title">
+            <h2 class="first">Dzikrul</h2>
+            <h2 class="last">Fadly <span>.</span></h2>
+        </div>
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Dzikrul Fadly | All Right Reserved</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    
+
+    <!-- Script JS -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
